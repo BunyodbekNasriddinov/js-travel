@@ -11,7 +11,7 @@ var hotelPrice = 250;
 var museumPrice = 120 * euroCourse;
 var totalSum = museumPrice + (ticketPrice + hotelPrice) * dollarCourse;
 
-if (totalSum >= 10000000) {
+if (userPrice >= totalSum) {
   elTitle.textContent += userName;
   elText.textContent = `Sizga oq yo'l ${userName}. Safaringiz behatar bo'lsin:)`;
   console.log(`${elTitle.textContent}\n${elText.textContent}`);
