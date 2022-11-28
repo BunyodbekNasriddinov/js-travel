@@ -15,6 +15,8 @@ if (userPrice >= totalSum) {
   elTitle.textContent += userName;
   elText.textContent = `Sizga oq yo'l ${userName}. Safaringiz behatar bo'lsin:)`;
   console.log(`${elTitle.textContent}\n${elText.textContent}`);
+} else if (isNaN(userPrice)) {
+  elText.textContent = `${userName} aka mablag'ingizni kiriting`;
 } else {
   elTitle.textContent += userName;
   elText.textContent = `Ozgina sabr qilasiz ekan ${userName}. Puldan muammo bor:)`;
